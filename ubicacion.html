@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico N*1</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-stack-32.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="api.html">API Rest</a>
+            <a href="consignas.html">Consignas</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="ubicacion.html">Ubicacion</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <div class="flex-container">
+            <div class="fondoBlanco">
+                <h2>Ubicacion</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8926893652665!2d-58.376298984201426!3d-34.606874965173326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad2f2267f29%3A0xebb2fee93635fae9!2sBartolom%C3%A9%20Mitre%20530%2C%20C1036%20CABA%2C%20Argentina!5e0!3m2!1ses!2smx!4v1666550194285!5m2!1ses!2smx"
+                    width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="fondoBlanco" style="align-self: center">
+                <p><b>Bme Mitre 530, CABA</b></p>
+                <p><b>Bs As, Argentina</b></p>
+                <p><b>Tel: (54) 11 4329-1000</b></p>
+            </div>
+
+        </div>
+        <div style="padding-left:16px">
+
+
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </section>
+
+    <footer>
+        <a href="grupo.html" class="btn-foot">Grupo Denisa, Ezequiel, Hector</a>
+    </footer>
+
+</body>
+
+</html>

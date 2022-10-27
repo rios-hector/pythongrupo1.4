@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico N*1</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-stack-32.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6b4c89b0a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="api.html">API Rest</a>
+            <a href="consignas.html">Consignas</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="ubicacion.html">Ubicacion</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <div style="padding-left:16px">
+            <div class="fondoBlanco">
+                <H3>
+                    <form action="mostrar_datos.html" name="formulario">
+                        <table>
+                            <tr>
+                                <td><i class="fa-solid fa-user"></i><label for="apellido"> Apellido:</label></td>
+                                <td><input type="text" name="ape" id="apellido"></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-user"></i><label for="nombre"> Nombre:</label></td>
+                                <td><input type="text" name="nom" id="nombre" class="form_input"></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-envelope"></i><label for="correo"> Correo:</label></td>
+                                <td><input type="text" name="ema" class="form_input" id="correo"></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-pen-to-square"></i><label for="comentario"> Comentario:</label><br></td>
+                                <td><textarea name="com" id="comentario" cols="40" rows="4"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" value="Enviar datos"></td>
+                                <td><input type="reset" value="Borrar"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </H3>
+            </div>
+
+        </div>
+
+        <script>
+            var formulario = document.getElementsByName('formulario')[0],
+                elementos = formulario.elements,
+                boton = document.getElementById('b1')
+
+            var validarApellido = function (e) {
+                if (formulario.ape.value == 0) {
+                    alert("Completa el campo Apellido");
+                    e.preventDefault();
+
+                }
+            };
+
+            var validarNombre = function (e) {
+                if (formulario.nom.value == 0) {
+                    alert("Completa el campo Nombre");
+                    e.preventDefault();
+
+                }
+            };
+
+            var validarEmail = function (e) {
+                var re = /^(([^&lt;&gt;()[\]\\.,;:\s@"]+(\.[^&lt;&gt;()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                var aa = re.test(formulario.ema.value)
+                if (aa == false) {
+                    alert("Completa correctamente el campo Email");
+                    e.preventDefault();
+                }
+            };
+
+            var validar = function (e) {
+                validarApellido(e);
+                validarNombre(e);
+                validarEmail(e);
+            };
+
+            formulario.addEventListener("submit", validar);
+
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </section>
+
+    <footer>
+        <a href="grupo.html" class="btn-foot">Grupo Denisa, Ezequiel, Hector</a>
+    </footer>
+
+</body>
+
+</html>

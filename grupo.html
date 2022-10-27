@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico N*1</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-stack-32.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="api.html">API Rest</a>
+            <a href="consignas.html">Consignas</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="ubicacion.html">Ubicacion</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <div style="padding-left:16px">
+            <div class="fondoBlanco">
+                <H3 class="goo-font">
+                    <ul>
+                        <li>Denisa Delaygue - denisadelaygue@gmail.com</li>
+                        <br>
+                        <li>Alejo Ezequiel Ramognino - ezequiel.ramognino@gmail.com</li>
+                        <br>
+                        <li>Hector Rios - rioshectoroscar@gmail.com</li>
+                        
+                    </ul>
+                </H3>
+                <br>
+                <a class="btn-volver" href="javascript: history.go(-1)">Volver</a>
+                <br>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </section>
+
+    <footer>
+        <a href="grupo.html" class="btn-foot">Grupo Denisa, Ezequiel, Hector</a>
+    </footer>
+
+</body>
+
+</html>
